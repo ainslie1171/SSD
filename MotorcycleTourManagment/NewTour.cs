@@ -22,24 +22,28 @@ namespace MotorcycleTourManagment
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            string TourName = tbx_TourName.Text;
-            string StartLocation = tbx_StartLocation.Text;
-            string EndLocation = tbx_EndLocation.Text;
-            string StartHotel = tbx_StartHotel.Text;
-            string EndHotel = tbx_EndHotel.Text;
-            string Route = tbx_Route.Text;
-            string RouteNotes = tbx_RouteNotes.Text;
-            string TourLeader = tbx_TourLeader.Text;
+            Tour tour = new Tour();
+            tour.TourName = tbx_TourName.Text;
+            tour.StartLocation = tbx_StartLocation.Text;
+            tour.EndLocation = tbx_EndLocation.Text;
+            tour.StartHotel = tbx_StartHotel.Text;
+            tour.EndHotel = tbx_EndHotel.Text;
+            tour.Route = tbx_Route.Text;
+            tour.RouteNotes = tbx_RouteNotes.Text;
+            tour.TourLeader = tbx_TourLeader.Text;
+            
 
-            string SQLCommand = "INSERT INTO Tour (TourName, StartLocation, EndLocation, StartHotel, EndHotel, Route, RouteNotes, TourLeader) Values ('" + TourName + "','" + StartLocation + "','" + EndLocation + "','" + StartHotel + "','" + EndHotel + "','" + Route + "','" + RouteNotes + "','" + TourLeader + "')";
+            string SQLCommand = "INSERT INTO Tour (TourName, StartLocation, EndLocation, StartHotel, EndHotel, Route, RouteNotes, TourLeader) Values ('" + tour.GetInfo() + "')";
 
             if(conn.SendCommand(SQLCommand))
             {
                 //success
+                MessageBox.Show("Success");
             }
             else
             {
                 //failure
+                MessageBox.Show("An error occured");
             }
         }
 

@@ -53,7 +53,7 @@
             this.btn_Save.Location = new System.Drawing.Point(12, 246);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(101, 40);
-            this.btn_Save.TabIndex = 0;
+            this.btn_Save.TabIndex = 8;
             this.btn_Save.Text = "Save Tour";
             this.btn_Save.UseVisualStyleBackColor = true;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
@@ -63,7 +63,7 @@
             this.tbx_TourName.Location = new System.Drawing.Point(144, 20);
             this.tbx_TourName.Name = "tbx_TourName";
             this.tbx_TourName.Size = new System.Drawing.Size(100, 20);
-            this.tbx_TourName.TabIndex = 1;
+            this.tbx_TourName.TabIndex = 0;
             // 
             // label1
             // 
@@ -95,7 +95,7 @@
             this.tbx_EndLocation.Location = new System.Drawing.Point(144, 72);
             this.tbx_EndLocation.Name = "tbx_EndLocation";
             this.tbx_EndLocation.Size = new System.Drawing.Size(100, 20);
-            this.tbx_EndLocation.TabIndex = 1;
+            this.tbx_EndLocation.TabIndex = 2;
             // 
             // label3
             // 
@@ -111,7 +111,7 @@
             this.tbx_StartHotel.Location = new System.Drawing.Point(144, 98);
             this.tbx_StartHotel.Name = "tbx_StartHotel";
             this.tbx_StartHotel.Size = new System.Drawing.Size(100, 20);
-            this.tbx_StartHotel.TabIndex = 1;
+            this.tbx_StartHotel.TabIndex = 3;
             // 
             // label4
             // 
@@ -127,7 +127,7 @@
             this.tbx_EndHotel.Location = new System.Drawing.Point(144, 124);
             this.tbx_EndHotel.Name = "tbx_EndHotel";
             this.tbx_EndHotel.Size = new System.Drawing.Size(100, 20);
-            this.tbx_EndHotel.TabIndex = 1;
+            this.tbx_EndHotel.TabIndex = 4;
             // 
             // label5
             // 
@@ -143,7 +143,7 @@
             this.tbx_Route.Location = new System.Drawing.Point(144, 150);
             this.tbx_Route.Name = "tbx_Route";
             this.tbx_Route.Size = new System.Drawing.Size(100, 20);
-            this.tbx_Route.TabIndex = 1;
+            this.tbx_Route.TabIndex = 5;
             // 
             // label6
             // 
@@ -159,7 +159,7 @@
             this.tbx_RouteNotes.Location = new System.Drawing.Point(144, 176);
             this.tbx_RouteNotes.Name = "tbx_RouteNotes";
             this.tbx_RouteNotes.Size = new System.Drawing.Size(100, 20);
-            this.tbx_RouteNotes.TabIndex = 1;
+            this.tbx_RouteNotes.TabIndex = 6;
             // 
             // label7
             // 
@@ -175,7 +175,7 @@
             this.tbx_TourLeader.Location = new System.Drawing.Point(144, 202);
             this.tbx_TourLeader.Name = "tbx_TourLeader";
             this.tbx_TourLeader.Size = new System.Drawing.Size(100, 20);
-            this.tbx_TourLeader.TabIndex = 1;
+            this.tbx_TourLeader.TabIndex = 7;
             // 
             // label8
             // 
@@ -191,7 +191,7 @@
             this.btn_cancel.Location = new System.Drawing.Point(171, 247);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(101, 38);
-            this.btn_cancel.TabIndex = 3;
+            this.btn_cancel.TabIndex = 9;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
