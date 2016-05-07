@@ -22,5 +22,19 @@ namespace MotorcycleTourManagment
             frm_NewTour form = new frm_NewTour();
             form.ShowDialog();
         }
+
+        private void btn_Test_Click(object sender, EventArgs e)
+        {
+            DatabaseConnection connection = new DatabaseConnection();
+            if(connection.Open())
+            {
+                MessageBox.Show("Connection Successfull!");
+            }
+            else
+            {
+                MessageBox.Show("Better luck next time =[");
+            }
+            connection.Close();
+        }
     }
 }

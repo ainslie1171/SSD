@@ -34,6 +34,7 @@
             this.btn_Booking = new System.Windows.Forms.Button();
             this.btn_NCustomer = new System.Windows.Forms.Button();
             this.btn_NTour = new System.Windows.Forms.Button();
+            this.btn_Test = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,11 +94,22 @@
             this.btn_NTour.UseVisualStyleBackColor = true;
             this.btn_NTour.Click += new System.EventHandler(this.btn_NTour_Click);
             // 
+            // btn_Test
+            // 
+            this.btn_Test.Location = new System.Drawing.Point(238, 224);
+            this.btn_Test.Name = "btn_Test";
+            this.btn_Test.Size = new System.Drawing.Size(97, 23);
+            this.btn_Test.TabIndex = 9;
+            this.btn_Test.Text = "Test Connection";
+            this.btn_Test.UseVisualStyleBackColor = true;
+            this.btn_Test.Click += new System.EventHandler(this.btn_Test_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 314);
+            this.Controls.Add(this.btn_Test);
             this.Controls.Add(this.btn_MTour);
             this.Controls.Add(this.btn_MCustomer);
             this.Controls.Add(this.btn_Booking);
@@ -119,6 +131,7 @@
         private System.Windows.Forms.Button btn_Booking;
         private System.Windows.Forms.Button btn_NCustomer;
         private System.Windows.Forms.Button btn_NTour;
+        private System.Windows.Forms.Button btn_Test;
     }
 }
 
