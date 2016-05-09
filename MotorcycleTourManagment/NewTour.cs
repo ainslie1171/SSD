@@ -33,7 +33,7 @@ namespace MotorcycleTourManagment
             tour.TourLeader = tbx_TourLeader.Text;
             
 
-            string SQLCommand = "INSERT INTO Tour (TourName, StartLocation, EndLocation, StartHotel, EndHotel, Route, RouteNotes, TourLeader) Values ('" + tour.GetInfo() + "')";
+            string SQLCommand = "INSERT INTO tbl_Tour (TourName, StartLocation, EndLocation, StartHotel, EndHotel, Route, RouteNotes, TourLeader) Values ('" + tour.GetInfo() + "')";
 
             if(conn.SendCommand(SQLCommand))
             {

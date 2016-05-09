@@ -10,19 +10,13 @@ namespace MotorcycleTourManagment
 {
     class DatabaseConnection
     {
-        private string m_connectionString = "user id=user;password=password;server=ainslie.noip.me;;database=ssd";
         private SqlConnection m_conn;
         private bool m_connectionStatus;
 
         public DatabaseConnection()
         {
-            m_conn = new SqlConnection(m_connectionString);
+            m_conn = new SqlConnection(Properties.Settings.Default.ssdConnectionString);
             m_connectionStatus = false;
-        }
-
-        public void setConnectionString(string connectionString)
-        {
-            m_connectionString = connectionString;
         }
 
         public bool Open()
