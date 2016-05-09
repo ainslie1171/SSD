@@ -96,16 +96,13 @@ namespace MotorcycleTourManagment
 
             if(!tbx_TourID.Text.Equals(""))
             {
-                //MessageBox.Show(tbx_TourID.Text);
                 content += "(TourID LIKE '%" + tbx_TourID.Text + "%')";
-                //content += "(City LIKE '%" + tbx_TourID.Text + "%')";
             }
 
             if (!tbx_TourName.Text.Equals(""))
             {
                 if (!content.Equals(" WHERE ")) content += "AND";
                 content += "(TourName LIKE '%" + tbx_TourName.Text + "%')";
-                //content += "(Country LIKE '%" + tbx_TourName.Text + "%')";
             }
 
             if (!tbx_StartLocation.Text.Equals(""))

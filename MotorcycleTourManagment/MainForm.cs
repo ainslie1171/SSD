@@ -48,5 +48,11 @@ namespace MotorcycleTourManagment
             frm_Customer form = new frm_Customer();
             form.ShowDialog();
         }
+
+        private void btn_Bookings_Click(object sender, EventArgs e)
+        {
+            frm_Booking form = new frm_Booking();
+            form.ShowDialog();
+        }
     }
 }

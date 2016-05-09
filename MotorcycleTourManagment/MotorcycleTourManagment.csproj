@@ -48,11 +48,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="frm_Customer.cs">
+    <Compile Include="Booking\frm_NewBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Customer.Designer.cs">
+    <Compile Include="Booking\frm_NewBooking.Designer.cs">
+      <DependentUpon>frm_NewBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer.cs" />
+    <Compile Include="Booking\frm_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking\frm_Booking.Designer.cs">
+      <DependentUpon>frm_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frm_Customer.Designer.cs">
       <DependentUpon>frm_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
@@ -62,42 +74,48 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewCustomer.cs">
+    <Compile Include="Customer\NewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewCustomer.Designer.cs">
+    <Compile Include="Customer\NewCustomer.Designer.cs">
       <DependentUpon>NewCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewTour.cs">
+    <Compile Include="Tour\NewTour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewTour.Designer.cs">
+    <Compile Include="Tour\NewTour.Designer.cs">
       <DependentUpon>NewTour.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tour.cs" />
+    <Compile Include="Tour\Tour.cs" />
     <Compile Include="TourDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TourDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ViewTours.cs">
+    <Compile Include="Tour\ViewTours.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewTours.Designer.cs">
+    <Compile Include="Tour\ViewTours.Designer.cs">
       <DependentUpon>ViewTours.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_Customer.resx">
+    <EmbeddedResource Include="Booking\frm_Booking.resx">
+      <DependentUpon>frm_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\frm_NewBooking.resx">
+      <DependentUpon>frm_NewBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frm_Customer.resx">
       <DependentUpon>frm_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewCustomer.resx">
+    <EmbeddedResource Include="Customer\NewCustomer.resx">
       <DependentUpon>NewCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewTour.resx">
+    <EmbeddedResource Include="Tour\NewTour.resx">
       <DependentUpon>NewTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,7 +127,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ViewTours.resx">
+    <EmbeddedResource Include="Tour\ViewTours.resx">
       <DependentUpon>ViewTours.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

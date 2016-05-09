@@ -36,7 +36,7 @@
             this.btn_NTour = new System.Windows.Forms.Button();
             this.btn_Test = new System.Windows.Forms.Button();
             this.btn_Customer = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Bookings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -117,15 +117,15 @@
             this.btn_Customer.UseVisualStyleBackColor = true;
             this.btn_Customer.Click += new System.EventHandler(this.btn_Customer_Click);
             // 
-            // button2
+            // btn_Bookings
             // 
-            this.button2.Location = new System.Drawing.Point(433, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 64);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Bookings";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btn_MTour_Click);
+            this.btn_Bookings.Location = new System.Drawing.Point(433, 169);
+            this.btn_Bookings.Name = "btn_Bookings";
+            this.btn_Bookings.Size = new System.Drawing.Size(89, 64);
+            this.btn_Bookings.TabIndex = 2;
+            this.btn_Bookings.Text = "Bookings";
+            this.btn_Bookings.UseVisualStyleBackColor = true;
+            this.btn_Bookings.Click += new System.EventHandler(this.btn_Bookings_Click);
             // 
             // Form1
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 314);
             this.Controls.Add(this.btn_Test);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_Bookings);
             this.Controls.Add(this.btn_Customer);
             this.Controls.Add(this.btn_Tour);
             this.Controls.Add(this.btn_MCustomer);
@@ -158,7 +158,7 @@
         private System.Windows.Forms.Button btn_NTour;
         private System.Windows.Forms.Button btn_Test;
         private System.Windows.Forms.Button btn_Customer;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Bookings;
     }
 }
 
