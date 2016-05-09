@@ -46,6 +46,7 @@ namespace MotorcycleTourManagment
             if(m_connectionStatus)
             {
                 m_conn.Close();
+                m_connectionStatus = false;
             }
         }
 

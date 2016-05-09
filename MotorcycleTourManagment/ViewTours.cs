@@ -157,29 +157,6 @@ namespace MotorcycleTourManagment
         private void btn_Test_Click(object sender, EventArgs e)
         {
             
-
-            /*
-            Int32 selectedRowCount = grd_Tours.Rows.GetRowCount(DataGridViewElementStates.Selected);
-            if (selectedRowCount > 0)
-            {
-                System.Text.StringBuilder sb = new System.Text.StringBuilder();
-
-                for (int i = 0; i < selectedRowCount; i++)
-                {
-                    sb.Append("Row: ");
-                    sb.Append(grd_Tours.SelectedRows[i].Index.ToString());
-                    sb.Append(Environment.NewLine);
-                }
-
-                sb.Append("Total: " + selectedRowCount.ToString());
-                MessageBox.Show(sb.ToString(), "Selected Rows");
-            }
-            else
-            {
-                MessageBox.Show("No rows are selected");
-            }
-             */
-
         }
 
         private void tbx_TourID_TextChanged(object sender, EventArgs e)
@@ -237,22 +214,24 @@ namespace MotorcycleTourManagment
         private void btn_Delete_Click(object sender, EventArgs e)
         {
 
-            List<int> list = new List<int>();
+            List<int> rows = new List<int>();
             foreach (DataGridViewCell c in grd_Tours.SelectedCells)
             {
-                if (!list.Contains(c.RowIndex))
-                    list.Add(c.RowIndex);
+                if (!rows.Contains(c.RowIndex))
+                    rows.Add(c.RowIndex);
             }
+            List<int> IDs = new List<int>();
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             sb.Append("Are you sure you want to delete the following records?");
             sb.Append(Environment.NewLine);
             foreach (DataGridViewRow row in grd_Tours.Rows)
             {
-                if (list.Contains(row.Index))
+                if (rows.Contains(row.Index))
                 {
                     sb.Append("TourID: ");
                     sb.Append(row.Cells[0].Value.ToString());
                     sb.Append(Environment.NewLine);
+                    IDs.Add((int)row.Cells[0].Value);
                 }
             }
 
@@ -262,7 +241,7 @@ namespace MotorcycleTourManagment
             {
                 DatabaseConnection conn = new DatabaseConnection();
                 conn.Open();
-                foreach(int i in list)
+                foreach(int i in IDs)
                 {
                     conn.SendCommand("DELETE FROM tbl_Tour WHERE TourID='"+i.ToString()+"'");
                 }
@@ -274,6 +253,11 @@ namespace MotorcycleTourManagment
             }
 
             UpdateGridContents();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

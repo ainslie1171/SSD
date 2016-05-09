@@ -48,12 +48,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="frm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customer.Designer.cs">
+      <DependentUpon>frm_Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCustomer.Designer.cs">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="NewTour.cs">
       <SubType>Form</SubType>
@@ -75,8 +88,14 @@
     <Compile Include="ViewTours.Designer.cs">
       <DependentUpon>ViewTours.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frm_Customer.resx">
+      <DependentUpon>frm_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCustomer.resx">
+      <DependentUpon>NewCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewTour.resx">
       <DependentUpon>NewTour.cs</DependentUpon>

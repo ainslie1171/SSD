@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_MTour = new System.Windows.Forms.Button();
+            this.btn_Tour = new System.Windows.Forms.Button();
             this.btn_MCustomer = new System.Windows.Forms.Button();
             this.btn_Booking = new System.Windows.Forms.Button();
             this.btn_NCustomer = new System.Windows.Forms.Button();
             this.btn_NTour = new System.Windows.Forms.Button();
             this.btn_Test = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Customer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -50,15 +50,15 @@
             this.label1.Text = "Welcome to the Motorcycle Tour Managment System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btn_MTour
+            // btn_Tour
             // 
-            this.btn_MTour.Location = new System.Drawing.Point(148, 169);
-            this.btn_MTour.Name = "btn_MTour";
-            this.btn_MTour.Size = new System.Drawing.Size(89, 64);
-            this.btn_MTour.TabIndex = 2;
-            this.btn_MTour.Text = "Tours";
-            this.btn_MTour.UseVisualStyleBackColor = true;
-            this.btn_MTour.Click += new System.EventHandler(this.btn_MTour_Click);
+            this.btn_Tour.Location = new System.Drawing.Point(148, 169);
+            this.btn_Tour.Name = "btn_Tour";
+            this.btn_Tour.Size = new System.Drawing.Size(89, 64);
+            this.btn_Tour.TabIndex = 2;
+            this.btn_Tour.Text = "Tours";
+            this.btn_Tour.UseVisualStyleBackColor = true;
+            this.btn_Tour.Click += new System.EventHandler(this.btn_MTour_Click);
             // 
             // btn_MCustomer
             // 
@@ -107,15 +107,15 @@
             this.btn_Test.UseVisualStyleBackColor = true;
             this.btn_Test.Click += new System.EventHandler(this.btn_Test_Click);
             // 
-            // button1
+            // btn_Customer
             // 
-            this.button1.Location = new System.Drawing.Point(289, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 64);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Customers";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_MTour_Click);
+            this.btn_Customer.Location = new System.Drawing.Point(289, 169);
+            this.btn_Customer.Name = "btn_Customer";
+            this.btn_Customer.Size = new System.Drawing.Size(89, 64);
+            this.btn_Customer.TabIndex = 2;
+            this.btn_Customer.Text = "Customers";
+            this.btn_Customer.UseVisualStyleBackColor = true;
+            this.btn_Customer.Click += new System.EventHandler(this.btn_Customer_Click);
             // 
             // button2
             // 
@@ -134,8 +134,8 @@
             this.ClientSize = new System.Drawing.Size(729, 314);
             this.Controls.Add(this.btn_Test);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_MTour);
+            this.Controls.Add(this.btn_Customer);
+            this.Controls.Add(this.btn_Tour);
             this.Controls.Add(this.btn_MCustomer);
             this.Controls.Add(this.btn_Booking);
             this.Controls.Add(this.btn_NCustomer);
@@ -151,13 +151,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_MTour;
+        private System.Windows.Forms.Button btn_Tour;
         private System.Windows.Forms.Button btn_MCustomer;
         private System.Windows.Forms.Button btn_Booking;
         private System.Windows.Forms.Button btn_NCustomer;
         private System.Windows.Forms.Button btn_NTour;
         private System.Windows.Forms.Button btn_Test;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Customer;
         private System.Windows.Forms.Button button2;
     }
 }
