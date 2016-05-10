@@ -54,5 +54,13 @@ namespace MotorcycleTourManagment
             frm_Booking form = new frm_Booking();
             form.ShowDialog();
         }
+
+        private void btn_Feedback_Click(object sender, EventArgs e)
+        {
+            Feedback.frm_Feedback form = new Feedback.frm_Feedback();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
+        }
     }
 }

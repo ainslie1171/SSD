@@ -68,11 +68,23 @@
       <DependentUpon>frm_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Feedback\frm_Feedback.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Feedback\frm_Feedback.Designer.cs">
+      <DependentUpon>frm_Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\frm_NewFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\frm_NewFeedback.Designer.cs">
+      <DependentUpon>frm_NewFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer\NewCustomer.cs">
       <SubType>Form</SubType>
@@ -80,11 +92,11 @@
     <Compile Include="Customer\NewCustomer.Designer.cs">
       <DependentUpon>NewCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tour\NewTour.cs">
+    <Compile Include="Tour\frm_NewTour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tour\NewTour.Designer.cs">
-      <DependentUpon>NewTour.cs</DependentUpon>
+    <Compile Include="Tour\frm_NewTour.Designer.cs">
+      <DependentUpon>frm_NewTour.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,11 +106,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Tour\ViewTours.cs">
+    <Compile Include="Tour\frm_ViewTours.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tour\ViewTours.Designer.cs">
-      <DependentUpon>ViewTours.cs</DependentUpon>
+    <Compile Include="Tour\frm_ViewTours.Designer.cs">
+      <DependentUpon>frm_ViewTours.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Booking\frm_Booking.resx">
       <DependentUpon>frm_Booking.cs</DependentUpon>
@@ -109,14 +121,20 @@
     <EmbeddedResource Include="Customer\frm_Customer.resx">
       <DependentUpon>frm_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Feedback\frm_Feedback.resx">
+      <DependentUpon>frm_Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\frm_NewFeedback.resx">
+      <DependentUpon>frm_NewFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\NewCustomer.resx">
       <DependentUpon>NewCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tour\NewTour.resx">
-      <DependentUpon>NewTour.cs</DependentUpon>
+    <EmbeddedResource Include="Tour\frm_NewTour.resx">
+      <DependentUpon>frm_NewTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,8 +145,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tour\ViewTours.resx">
-      <DependentUpon>ViewTours.cs</DependentUpon>
+    <EmbeddedResource Include="Tour\frm_ViewTours.resx">
+      <DependentUpon>frm_ViewTours.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
